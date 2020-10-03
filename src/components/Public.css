@@ -101,7 +101,6 @@
 }
 
 .links {
-    transition: all 0.1s ease-in;
     align-items: center;
     text-decoration: none !important;
     height: 100%;
@@ -189,7 +188,6 @@
   }
 
   .switch {
-    transition: all 0.2s ease-in;
     background: var(--bg-primary-color);
     color: var(--text-primary-color);
     width: 60px;
