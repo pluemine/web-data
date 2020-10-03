@@ -1,0 +1,209 @@
+:root {
+    --bg-primary-color: #FFFFFF;
+    --bg-secondary-color: #F2F2F2;
+    --text-primary-color: #000000;
+    --text-secondary-color: #464646;
+    --button-bg-color: #D8D8D8;
+    --button-text-color: #000000;
+    --selected-color: rgba(200,200,200,0.35);
+    --textbox-bg-color: #F1F1F1;
+    --textbox-text-color: #898989;
+    --transparent-color: rgba(0,0,0,0);
+    --bg-transparent-color: rgba(255, 255, 255, 0.85);
+    --card-color: #F8F6F6;
+    --shadow-color: 0px 0px 15px -10px rgba(0,0,0,0.9);
+  }
+
+[data-theme="dark"] {
+    --bg-primary-color: #181818;
+    --bg-secondary-color: #2A2D33;
+    --text-primary-color: #FFFFFF;
+    --text-secondary-color: #D1D1D1;
+    --button-bg-color: #EEEEEE;
+    --button-text-color: #181818;
+    --selected-color: rgba(160,160,160,0.4);
+    --textbox-bg-color: #292929;
+    --textbox-text-color: #CECECE;
+    --transparent-color: rgba(0,0,0,0);
+    --bg-transparent-color: rgba(0, 0, 0, 0.6);
+    --card-color: #38303A;
+    --shadow-color: 0px 0px 15px -10px rgba(140,160,160,0.9);
+}
+
+.bg-primary-color {
+    background: var(--bg-primary-color);
+}
+
+.bg-secondary-color {
+    background: var(--bg-secondary-color);
+}
+
+.text-primary-color {
+    color: var(--text-primary-color);
+}
+
+.text-secondary-color {
+    color: var(--text-secondary-color);
+}
+
+.block {
+    transition: all 1s ease;
+}
+
+.banner {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2A2D33;
+    color: #FFFFFF;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.board {
+    background: var(--bg-transparent-color);
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 15px -10px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 15px -10px rgba(0,0,0,0.5);
+}
+
+@media (max-width: 576px) {
+    .board {
+        margin: 30px !important;
+    }
+}
+
+.item {
+    height: auto;
+    width: 100%;
+    margin: 2px;
+}
+
+.item-text {
+    color: var(--text-primary-color);
+    padding-left: 30px;
+}
+
+.item-sub-text {
+    color: var(--text-secondary-color);
+    font-size: 12px;
+    font-weight: bold;
+    padding-left: 30px;
+}
+
+.non-links {
+    height: 100%;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.links {
+    align-items: center;
+    text-decoration: none !important;
+    height: 100%;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+}
+
+.links:hover {
+    background-color: var(--selected-color);
+    width: 100%;
+    transition: all 0.2s ease-out;
+}
+
+.page {
+    background-color: var(--bg-primary-color);
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 15px -10px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 15px -10px rgba(0,0,0,0.5);
+}
+
+.title-box {
+    width: 100%;
+    border-bottom: 2px solid var(--bg-secondary-color)
+}
+
+.title {
+    color: var(--text-primary-color);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+}
+
+.card {
+    background-color: var(--card-color) !important;
+    border: none !important;
+    border-radius: 10px !important;
+    padding: 10px;
+}
+
+.card-topic {
+    color: var(--text-primary-color);
+    font-size: 20px !important;
+    font-weight: bold !important;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.card-subtopic {
+    color: var(--text-secondary-color);
+    font-size: 12px !important;
+    font-weight: bold !important;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.button {
+    transition: all .2s ease-in;
+    width: 100%;
+    margin: 10px;
+    padding: 5px;
+    background: var(--button-bg-color);
+    color: var(--button-text-color);
+    box-sizing: border-box;
+    border: none !important;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none !important;
+  }
+
+  .button:focus, .button:hover {
+    background: var(--button-bg-color);
+    color: var(--button-text-color);
+    transition: all 0.2s ease-out;
+  }
+
+  .button:disabled,
+  .button[disabled] {
+    background: var(--button-bg-color);
+    color: var(--button-text-color);
+  }
+
+  .switch {
+    background: var(--bg-primary-color);
+    color: var(--text-primary-color);
+    width: 60px;
+    box-sizing: border-box;
+    border: none !important;
+    border-radius: 5px;
+    text-decoration: none !important;
+  }
+
+  .switch:focus, .switch:hover {
+    background: var(--bg-secondary-color);
+    transition: all 0.2s ease-out;
+  }
+
+  .switch:disabled,
+  .switch[disabled] {
+    background: var(--selected-color);
+    font-weight: bold;
+  }
