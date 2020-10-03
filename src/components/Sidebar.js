@@ -5,7 +5,7 @@ function Sidebar() {
     return (
         <div className="sidebar">
             <div className='row item' style={{ width: '100%', paddingTop: '60px', paddingBottom: '30px' }}>
-                <Link to='/Home' className='row'>
+                <Link to='/' className='row' style={{textDecoration: 'none' }}>
                     <div className='item-text' style={{fontWeight: 'bold' }}>SCH DESIGNED</div>
                 </Link>
             </div>

@@ -82,6 +82,11 @@ function Home() {
                     </div>
                 </div>
             </section>
+            <section className='block'>
+                <div className='banner' align='center'>
+                    © 2020 SCH DESIGNED
+                </div>
+            </section>
         </div>
     )
 }
