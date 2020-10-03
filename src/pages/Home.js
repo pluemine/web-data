@@ -29,7 +29,7 @@ function Home() {
                                     </div>
                                     <div className='row' style={{ width: '100%', margin: 'auto' }}>
                                         <div className='card-topic'>
-                                            Meet out extraordinary Portfolio
+                                            Meet our extraordinary Portfolio
                                         </div>
                                     </div>
                                     <div className='row' style={{ width: '100%', margin: 'auto' }}>
@@ -54,9 +54,9 @@ function Home() {
                                             <img src='template-1.png' style={{ height: '100%', width: '100%' }} />
                                         </div>
                                         <div className='row' style={{ width: '100%' }}>
-                                            <Link className='button'>
+                                            <a href='template-1/index.html' className='button'>
                                                 Template
-                                            </Link>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>

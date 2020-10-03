@@ -95,7 +95,7 @@ function Sidebar() {
                         <div className='item-text'>Latest Update</div>
                     </div>
                     <div className='row'>
-                        <div className='item-sub-text'>03 Oct 2020</div>
+                        <div className='item-sub-text'>04 Oct 2020</div>
                     </div>
                 </div>
             </div>

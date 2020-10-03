@@ -10,7 +10,7 @@
     --textbox-text-color: #898989;
     --transparent-color: rgba(0,0,0,0);
     --bg-transparent-color: rgba(255, 255, 255, 0.85);
-    --card-color: #F8F6F6;
+    --card-color: #FAF8F8;
     --shadow-color: 0px 0px 15px -10px rgba(0,0,0,0.9);
   }
 
@@ -101,6 +101,7 @@
 }
 
 .links {
+    transition: all 0.1s ease-in;
     align-items: center;
     text-decoration: none !important;
     height: 100%;
@@ -162,12 +163,12 @@
 }
 
 .button {
-    transition: all .2s ease-in;
+    transition: all 0.2s ease-in;
     width: 100%;
     margin: 10px;
     padding: 5px;
-    background: var(--button-bg-color);
-    color: var(--button-text-color);
+    background: var(--selected-color);
+    color: var(--text-primary-color);
     box-sizing: border-box;
     border: none !important;
     border-radius: 5px;
@@ -176,18 +177,19 @@
   }
 
   .button:focus, .button:hover {
-    background: var(--button-bg-color);
-    color: var(--button-text-color);
+    background: var(--bg-secondary-color);
+    color: var(--text-primary-color);
     transition: all 0.2s ease-out;
   }
 
   .button:disabled,
   .button[disabled] {
-    background: var(--button-bg-color);
-    color: var(--button-text-color);
+    background: var(--bg-secondary-color);
+    color: var(--text-secondary-color);
   }
 
   .switch {
+    transition: all 0.2s ease-in;
     background: var(--bg-primary-color);
     color: var(--text-primary-color);
     width: 60px;
