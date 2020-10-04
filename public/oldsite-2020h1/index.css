@@ -1,0 +1,255 @@
+:root {
+  --black-color: #2A2D33;
+  --white-color: #FEFEFE;
+  --cardwhite-shadow-color: 9px 9px 16px rgba(163,177,198,0.6), -9px -9px 16px rgba(163,177,198,0.2);
+  --cardwhite-shadow-hover-color: inset 9px 9px 16px rgb(163,177,198,0.2), inset -9px -9px 16px rgba(163,177,198,0.1);
+  --cardblack-shadow-color: 9px 9px 16px rgba(10,10,10,0.5), -9px -9px 16px rgba(10,10,10,0.5);
+  --cardblack-shadow-hover-color: inset 9px 9px 16px rgba(10,10,10,0.4), inset -9px -9px 16px rgba(10,10,10,0.4);
+  --navbarwhite-shadow-color: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] {
+  --black-color: #FEFEFE;
+  --white-color: #2A2D33;
+  --cardwhite-shadow-color: 9px 9px 16px rgba(10,10,10,0.5), -9px -9px 16px rgba(10,10,10,0.5);
+  --cardwhite-shadow-hover-color: inset 9px 9px 16px rgba(10,10,10,0.4), inset -9px -9px 16px rgba(10,10,10,0.4);
+  --cardblack-shadow-color: 9px 9px 16px rgba(163,177,198,0.6), -9px -9px 16px rgba(163,177,198,0.2);
+  --cardblack-shadow-hover-color: inset 9px 9px 16px rgba(10,10,10,0.4), inset -9px -9px 16px rgba(10,10,10,0.4);
+  --navbarwhite-shadow-color: 0px 1px 5px rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 767px) {
+  .right-col {
+      margin-top:20px;
+  }
+}
+
+.text-padding-10 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.text-padding-20 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+ 
+ .page {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2A2D33;;
+    color: #FFFFFF;
+    font-size: 12px;
+    padding: 10px;
+ }
+
+ .block {
+    transition: all 1s ease;
+    background-color: var(--white-color);
+ }
+
+ .center {
+  margin: 0;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+ }
+
+ .navbar-white {
+    border: 0;
+    border-radius: 0;
+    position: relative;
+    top: 0px;
+    width: 100%;
+    min-height: 70px;
+    background: var(--white-color);
+    z-index: 9999;
+    transition: all 1s ease, padding 1s ease;
+  }
+
+  .navbar-white.open {
+      position: fixed;
+      min-height: 70px;
+      box-shadow: var(--navbarwhite-shadow-color);
+      transition: all 1s ease, padding 1s ease;
+  }
+
+  .navbar-line {
+    position: absolute;
+    display: block;
+    width: 220px;
+    height: 6px;
+    left: 50%;
+    margin-left: -110px;
+    margin-top: 64px;
+    background: var(--black-color);
+    transition: all 1s ease;
+    transform: scaleX(0);
+    transform-origin: center;
+  }
+
+  .extraposition.open {
+    padding-top: 70px;
+  }
+
+  .navtext {
+    position: absolute;
+    display: block;
+    width: 220px;
+    left: 50%;
+    margin-left: -110px;
+    font-size: 20px;
+    text-align: center;
+    height: auto;
+    cursor: pointer;
+  }
+
+  .navtext:hover ~ .navbar-line{
+    transform: scaleX(1) !important;
+  }
+
+  .card {
+    transition: all 1s ease;
+    width: fit-content;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: var(--white-color);
+    box-shadow: var(--cardwhite-shadow-color);
+    border-radius: 10px;
+  }
+
+  .card:hover {
+    box-shadow: var(--cardwhite-shadow-hover-color);
+  }
+
+  .card-black {
+    transition: all 1s ease;
+    width: fit-content;
+    height: auto;
+    padding: 20px;
+    background: #2A2D33;
+    box-shadow: var(--cardwhite-shadow-color);
+    border-radius: 10px;
+  }
+
+  .card-black:hover {
+    box-shadow: var(--cardblack-shadow-hover-color);
+  }
+
+  .board {
+    transition: all 1s ease;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: var(--white-color);
+    box-shadow: var(--cardwhite-shadow-color);
+    border-radius: 10px;
+  }
+
+  .button-white {
+    transition: all .2s ease-in;
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: rgba(255, 255, 255, 0);
+    color: var(--black-color);
+    border: 1px solid var(--black-color);
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+
+  .button-white:hover {
+    background: var(--black-color);
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
+  }
+
+  .button-white:focus {
+    background:var(--black-color);
+    color: var(--white-color);
+    font-weight: bold;
+    border: 1px solid var(--white-color);
+    outline: none;
+  }
+
+  .button-white:disabled,
+  .button-white[disabled] {
+    border: 1px solid var(--white-color);
+    background: var(--black-color);
+    color: var(--white-color);
+    font-weight: bold;
+  }
+
+  .bg-white {
+    background: var(--white-color);
+  }
+
+  .bg-black {
+    background: var(--black-color);
+  }
+
+  .text-white {
+    color: var(--white-color);
+  }
+
+  .text-black {
+    color: var(--black-color);
+  }
+
+  .text-white-onblack {
+    color: #FFFFFF;
+  }
+
+  .text-bold {
+    font-weight: bold;
+  }
+
+  .text-left {
+    text-align: left !important;
+  }
+  
+  .text-24 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .text-22 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .text-20 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .text-18 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .text-16 {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .text-14 {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .text-12 {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .text-10 {
+    font-size: 10px;
+    text-align: center;
+  }

@@ -3,9 +3,9 @@ import './Public.css';
 import { Link } from 'react-router-dom';
 function Sidebar() {
     return (
-        <div className="sidebar">
+        <div>
             <div className='row item' style={{ width: '100%', paddingTop: '60px', paddingBottom: '30px' }}>
-                <Link to='/' className='row' style={{textDecoration: 'none' }}>
+                <Link to='/' className='row brand' style={{textDecoration: 'none' }}>
                     <div className='item-text' style={{fontWeight: 'bold' }}>SCH DESIGNED</div>
                 </Link>
             </div>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SCH Designed</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script type='text/javascript' src='index.js'></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script>
+        var scrollingNav = function () {
+            if ($(window).scrollTop() >= 125) {
+                $('.navbar-white').addClass('open');
+                $('.extraposition').addClass('open');
+            }
+            else {
+                $('.navbar-white').removeClass('open');
+                $('.extraposition').removeClass('open');
+            }
+        };
+
+        $(window).scroll(function () {
+            scrollingNav();
+        });
+    </script>
+</head>
+
+<body>
+    <section class="block">
+        <div class="page" align="center">
+            By continuing to use our website, you are accepting to our website policy.
+        </div>
+    </section>
+    <section class="block" align="center" style="padding-top: 15px;">
+        <img src="img/logo-color.png" id="logo" width="40px" onclick="location.href='index.html';"
+            style="cursor: pointer;">
+    </section>
+
+    <nav class="navbar-white">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"
+                    style="margin-top: 16px">
+                    <span class="icon-bar bg-black"></span>
+                    <span class="icon-bar bg-black"></span>
+                    <span class="icon-bar bg-black"></span>
+                </button>
+                <div class="navtext text-black" onclick="location.href='index.html';" style="margin-top: 14px;">SCH
+                    DESIGNED</div>
+                <div class="navtext text-14 text-black" onclick="location.href='index.html';" style="margin-top: 36px;">
+                    SIGNATURE
+                </div>
+                <div class="navbar-line"></div>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar" style="margin-top: 11px;">
+                <ul class="nav navbar-nav">
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown" align="center">
+                        <button class="button-white" data-toggle="dropdown"
+                            style="margin: auto; margin-top: 3px; width: 170px; cursor: pointer;"><i
+                                class='fa fa-align-justify' style="margin-right: 10px;"></i>MENU & THEME</button>
+                        <ul class="dropdown-menu bg-white"
+                            style="margin-top: 30px; padding: 30px; min-width: 280px; border-radius: 10px;">
+                            <li align="center"><button class="button-white" onclick="location.href='index.html';">HOME</button></li>
+                            <li align="center"><button class="button-white" onclick="location.href='portfolio.html';">PORTFOLIO</button></li>
+                            <li align="center"><button class="button-white" onclick="location.href='blog.html';">BLOG</button></li>
+                            <li align="center"><hr></li>
+                            <li align="center"><button class="button-white" id="setdefaultbtn" onclick="setdefault()"><i
+                                        class="fa fa-tv" style="margin-right: 10px;"></i>SYSTEM DEFAULT</button></li>
+                            <li align="center"><button class="button-white" id="setdarkbtn" onclick="setdark()"><i
+                                        class="fa fa-moon" style="margin-right: 10px;"></i>DARK THEME</button></li>
+                            <li align="center"><button class="button-white" id="setlightbtn" onclick="setlight()"><i
+                                        class="fa fa-sun" style="margin-right: 10px;"></i>LIGHT THEME</button></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="extraposition bg-white"></div>
+    <section class="block" align="center" style="padding-top: 10px;">
+        <div class="container">
+            <div class="row">
+                <div class="col" style="max-width: 100%;">
+                    <img src="img/card-allport.png" style="max-width: 60%;">
+                </div>
+            </div>
+            <div class="row text-24 text-black" style="padding-top: 10px;">
+                EXTRAORDINARY PORTFOLIO
+                <hr width="50%">
+            </div>
+        </div>
+    </section>
+    <section class="block">
+        <div class="container board" align="center" style="padding-top: 20px;">
+            <div class="row">
+                <div class="col-md-3" style="margin: auto;">
+                    <div class="row" align="center">
+                        <div class="col-md-12 col-sm-6 col-xs-12">
+                            <div class="row" align="center" style="width: 100%; max-width: 270px;">
+                                <img src="img/avatar.png" width="80%" style="margin: 20px;">
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-6 col-xs-12">
+                            <div class="row" align="center" style="width: 100%; max-width: 270px;">
+                                <div class="text-16 text-left text-black text-bold" style="margin: 10px;">
+                                    FACEBOOK
+                                </div>
+                                <a href="https://www.facebook.com/suchut.sapsathien.10">
+                                    <div class="text-14 text-left text-black" style="margin: 10px;">
+                                        SUCHUT SAPSATHIEN
+                                    </div>
+                                </a>
+                                <div class="text-16 text-left text-black text-bold" style="margin: 10px;">
+                                    TWITTER
+                                </div>
+                                <a href="https://www.twitter.com/pluemssn">
+                                    <div class="text-14 text-left text-black" style="margin: 10px;">
+                                        PLUEMSSN
+                                    </div>
+                                </a>
+                                <div class="text-16 text-left text-black text-bold" style="margin: 10px;">
+                                    INSTAGRAM
+                                </div>
+                                <a href="https://www.instagram.com/pluemssn">
+                                    <div class="text-14 text-left text-black" style="margin: 10px;">
+                                        PLUEMSSN
+                                    </div>
+                                </a>
+                                <div class="text-16 text-left text-black text-bold" style="margin: 10px;">
+                                    GITHUB
+                                </div>
+                                <a href="https://www.github.com/pluemine">
+                                    <div class="text-14 text-left text-black" style="margin: 10px;">
+                                        PLUEMINE
+                                    </div>
+                                </a>
+                                <div class="text-16 text-left text-black text-bold" style="margin: 10px;">
+                                    WEBSITE
+                                </div>
+                                <a href="https://pluemine.github.io">
+                                    <div class="text-14 text-left text-black" style="margin: 10px;">
+                                        PLUEMINE.GITHUB.IO
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row" align="center">
+                        <div class="col-md-12 col-sm-6 col-xs-12">
+                            <div class="row card" align="center"
+                                style="margin-top: 20px; width: 100%; max-width: 270px;">
+                                <div class="text-20 text-black" style="margin: 10px;">
+                                    CONTACT ME
+                                </div>
+                                <img src="img/icon-phone.png" id="icon-phone" width="25px" style="margin-top:10px">
+                                <div class="text-16 text-black text-bold" style="margin-top: 10px;">
+                                    PHONE
+                                </div>
+                                <div class="text-14 text-black" style="margin-bottom: 10px;">
+                                    092-256-8868
+                                </div>
+                                <img src="img/icon-email.png" id="icon-email" width="25px" style="margin-top:10px">
+                                <div class="text-16 text-black text-bold" style="margin-top: 10px;">
+                                    EMAIL ADDRESS
+                                </div>
+                                <div class="text-14 text-black" style="margin-bottom: 10px;">
+                                    pluem_ultimate@hotmail.com
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-6 col-xs-12">
+                            <div class="row card" align="center"
+                                style="margin-top: 20px; width: 100%; max-width: 270px;">
+                                <div class="text-20 text-black" style="margin: 10px;">
+                                    WEBSITE INFO
+                                </div>
+                                <img src="img/icon-webinfo.png" id="icon-webinfo" width="30%" style="margin:10px">
+                                <div class="text-16 text-black text-bold" style="margin-top: 10px;">
+                                    STATUS
+                                </div>
+                                <div class="text-14 text-black" style="margin-bottom: 10px;">
+                                    ONLINE
+                                </div>
+                                <div class="text-16 text-black text-bold" style="margin-top: 10px;">
+                                    LATEST UPDATE
+                                </div>
+                                <div class="text-14 text-black" style="margin-bottom: 10px;">
+                                    12 APRIL 2020
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="col-md-9" style="margin:auto;">
+                    <div class="row card-black" align="center" style="width: 100%;">
+                        <div class="text-20 text-white-onblack">NEW PROJECT COMING OUT NEXT</div>
+                        <img src="img/portfolio/news-update.png" style="max-width: 15%; margin-top: 10px;">
+                    </div>
+                    <br />
+                    <div class="text-24 text-black text-bold text-left">
+                        ALL PROJECTS
+                    </div>
+                    <br />
+                    <div class="row" align="center">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="row card" align="center" style="width: 100%;">
+                                <div class="text-20 text-black text-padding-10">GREENHOUSE</div>
+                                <img src="img/portfolio/portfolio-1.png" style="max-width: 120px; margin-top: 10px;">
+                                <div class="button-white"
+                                    style="margin-top: 20px; cursor: pointer;">INFORMATION</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 right-col">
+                            <div class="row card" align="center" style="width: 100%;">
+                                <div class="text-20 text-black text-padding-10">KINGTOWER</div>
+                                <img src="img/portfolio/portfolio-2.png" style="max-width: 120px; margin-top: 10px;">
+                                <div class="button-white"
+                                    style="margin-top: 20px; cursor: pointer;">INFORMATION</div>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row" align="center">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="row card" align="center" style="width: 100%;">
+                                <div class="text-20 text-black text-padding-10">MINOR CINEPLEX</div>
+                                <img src="img/portfolio/portfolio-3.png" style="max-width: 120px; margin-top: 10px;">
+                                <div class="button-white"
+                                    style="margin-top: 20px; cursor: pointer;">INFORMATION</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 right-col">
+                            <div class="row card" align="center" style="width: 100%;">
+                                <div class="text-20 text-black text-padding-10">FASTPHOTO</div>
+                                <img src="img/portfolio/portfolio-4.png" style="max-width: 120px; margin-top: 10px;">
+                                <div class="button-white"
+                                    style="margin-top: 20px; cursor: pointer;">INFORMATION</div>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row card" align="center" style="width: 100%;">
+                        <div class="text-20 text-black text-padding-10">OTHER PROJECTS</div>
+                        <img src="img/portfolio/portfolio-5.png" style="max-width: 120px; margin-top: 10px;">
+                        <div class="button-white"
+                            style="margin-top: 20px; cursor: pointer;">INFORMATION</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+    </section>
+    <section class="block">
+        <div class="page" align="center">
+            © 2020 SCH DESIGNED
+        </div>
+    </section>
+</body>
