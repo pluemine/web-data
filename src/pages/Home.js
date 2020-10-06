@@ -3,15 +3,12 @@ import { Link } from 'react-router-dom';
 import '../components/Public.css';
 import Sidebar from '../components/Sidebar';
 import Titlebar from '../components/Titlebar';
+import Card from '../components/Card';
+import Cardduo from '../components/Cardduo';
 
 function Home() {
     return (
         <div>
-            <section className='block'>
-                <div className='banner' align='center'>
-                    By continuing to use our website, you are accepting to our website policy.
-                </div>
-            </section>
             <section className='block'>
                 <div className='container' align='center' style={{ paddingTop: '30px', paddingBottom: '30px' }}>
                     <div className='row board'>
@@ -21,72 +18,55 @@ function Home() {
                             <Sidebar />
                         </div>
                         <div className='col-sm-6 col-md-8 col-lg-9 page' style={{ borderRadius: '10px' }}>
-                            <Titlebar />
-                            <div className='row' style={{ padding: '40px' }}>
-                                <div className='card'>
-                                    <div className='row' style={{ width: '100%', margin: 'auto' }}>
-                                        <div className='card-subtopic'>
-                                            FEATURED TOPIC
-                                        </div>
-                                    </div>
-                                    <div className='row' style={{ width: '100%', margin: 'auto' }}>
-                                        <div className='card-topic'>
-                                            Meet our Extraordinary Portfolio
-                                        </div>
-                                    </div>
-                                    <div className='row' style={{ width: '100%', margin: 'auto' }}>
-                                        <img src='card-allport.png' style={{ height: '100%', width: '100%' }} />
-                                    </div>
-                                    <div className='row' style={{ width: '100%' }}>
-                                        <button className='button' disabled>
-                                            Portfolio
-                                        </button>
-                                    </div>
+                            <Titlebar title='Home' />
+                            <div style={{ padding: '40px', paddingTop: '30px', paddingBottom: '20px' }}>
+                                <Card subtopic='FEATURED TOPIC'
+                                    topic='Meet my Extraordinary Portfolio'
+                                    detail=''
+                                    source='card-allport.png'
+                                    id='card-allport'
+                                    link='/Portfolio'
+                                    button='Portfolio' />
+                            </div>
+                            <div className='row title-box'>
+                                <div className='col-md-12 title'>
+                                    Other Topics
                                 </div>
                             </div>
-                            <div className='row' style={{ paddingLeft: '20px', paddingRight: '20px' }}>
-                                <div className='col-md-6' style={{ width: '100%', paddingTop: '10px', paddingBottom: '20px' }}>
-                                    <div className='card' style={{ height: '100%' }}>
-                                        <div className='row' style={{ width: '100%' }}>
-                                            <div className='card-topic' style={{ paddingTop: '10px', paddingBottom: '10px' }}>
-                                                Introducing new Portfolio Template
-                                            </div>
-                                        </div>
-                                        <div className='row' style={{ width: '88%', margin: 'auto' }}>
-                                            <img src='template-1.png' style={{ height: '100%', width: '100%' }} />
-                                        </div>
-                                        <div className='row' style={{ width: '100%' }}>
-                                            <a href='template-1/index.html' className='button'>
-                                                Template
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className='col-md-6' style={{ width: '100%', paddingTop: '10px', paddingBottom: '20px' }}>
-                                    <div className='card' style={{ height: '100%' }}>
-                                        <div className='row' style={{ width: '100%' }}>
-                                            <div className='card-topic' style={{ paddingTop: '10px', paddingBottom: '10px' }}>
-                                                How far we've come? Meet our old signature website design here!
-                                            </div>
-                                        </div>
-                                        <div className='row' style={{ width: '88%', margin: 'auto' }}>
-                                            <img src='card-creation.png' style={{ height: '100%', width: '100%' }} />
-                                        </div>
-                                        <div className='row' style={{ width: '100%' }}>
-                                            <a href='oldsite-2020h1/index.html' className='button'>
-                                                Website
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div style={{ paddingLeft: '20px', paddingRight: '20px', paddingTop: '20px' }}>
+                                <Cardduo subtopic1='MEET THE DEVELOPER'
+                                    topic1='Want to know more about me?'
+                                    detail1=''
+                                    source1='icon-aboutme.png'
+                                    id1='icon-aboutme'
+                                    link1='/Aboutme'
+                                    button1='About me'
+                                    subtopic2='MEET THE DEVELOPER'
+                                    topic2='How we design? Learn more here'
+                                    detail2=''
+                                    source2='icon-switch.png'
+                                    id2='icon-switch'
+                                    link2='/Development'
+                                    button2='Development' />
+                            </div>
+                            <div style={{ paddingLeft: '20px', paddingRight: '20px' }}>
+                                <Cardduo subtopic1='EXTERNAL TOPIC'
+                                    topic1='Introducing new Portfolio Template'
+                                    detail1=''
+                                    source1='template-1.png'
+                                    id1='template-1'
+                                    link1='template-1/index.html'
+                                    button1='Template'
+                                    subtopic2='EXTERNAL TOPIC'
+                                    topic2='How far I have come? Meet our Old Website'
+                                    detail2=''
+                                    source2='icon-creation.png'
+                                    id2='icon-creation'
+                                    link2='oldsite-2020h1/index.html'
+                                    button2='Website' />
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            <section className='block'>
-                <div className='banner' align='center'>
-                    © 2020 SCH DESIGNED
                 </div>
             </section>
         </div>

@@ -6,7 +6,7 @@ function Sidebar() {
         <div>
             <div className='row item' style={{ width: '100%', paddingTop: '60px', paddingBottom: '30px' }}>
                 <Link to='/' className='row brand' style={{textDecoration: 'none' }}>
-                    <div className='item-text' style={{fontWeight: 'bold' }}>SCH DESIGNED</div>
+                    <div className='item-text' onClick='window.location.reload();' style={{fontWeight: 'bold' }}>SCH DESIGNED</div>
                 </Link>
             </div>
             <div className='row item' style={{ width: '100%' }}>
@@ -25,7 +25,7 @@ function Sidebar() {
                         <div className='item-text'>Twitter</div>
                     </div>
                     <div className='row'>
-                        <div className='item-sub-text'>Pluemssn</div>
+                        <div className='item-sub-text'>pluemssn</div>
                     </div>
                 </a>
             </div>
@@ -35,7 +35,7 @@ function Sidebar() {
                         <div className='item-text'>Instagram</div>
                     </div>
                     <div className='row'>
-                        <div className='item-sub-text'>Pluemssn</div>
+                        <div className='item-sub-text'>pluemssn</div>
                     </div>
                 </a>
             </div>
@@ -45,7 +45,7 @@ function Sidebar() {
                         <div className='item-text'>Github</div>
                     </div>
                     <div className='row'>
-                        <div className='item-sub-text'>Pluemine</div>
+                        <div className='item-sub-text'>pluemine</div>
                     </div>
                 </a>
             </div>
@@ -95,7 +95,7 @@ function Sidebar() {
                         <div className='item-text'>Latest Update</div>
                     </div>
                     <div className='row'>
-                        <div className='item-sub-text'>04 Oct 2020</div>
+                        <div className='item-sub-text'>06 Oct 2020</div>
                     </div>
                 </div>
             </div>
