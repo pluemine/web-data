@@ -110,7 +110,7 @@ if (localStorage.getItem('theme-mode') == "default") {
 function Navbar() {
     return (
         <nav className='container mynav' style={{ }}>
-            <div className='row nav-block' style={{ width: '20%' }}>
+            <div className='row nav-block' style={{ width: '200px' }}>
                 <button className='switch' style={{margin: 'auto' }} id='setlightbtn' onClick={setlight}>Light</button>
                 <button className='switch' style={{margin: 'auto' }} id='setdarkbtn' onClick={setdark}>Dark</button>
                 <button className='switch' style={{margin: 'auto' }} id='setdefaultbtn' onClick={setdefault}>Auto</button>

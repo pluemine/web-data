@@ -33,7 +33,7 @@ function Portfolio() {
                                     All Portfolios
                                 </div>
                             </div>
-                            <div style={{ paddingLeft: '20px', paddingRight: '20px' }}>
+                            <div style={{ paddingLeft: '20px', paddingRight: '20px', paddingTop: '20px' }}>
                                 <Cardduo subtopic1='PORTFOLIO JS CSS HTML API'
                                     topic1='Green House'
                                     detail1='GreenHouse is one of my IoT team projects. GreenHouse system can be used to control the humidity of the closed area. My positioning is "Front End" developer.'
