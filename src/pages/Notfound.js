@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import '../components/Public.css';
 import Sidebar from '../components/Sidebar';
 import Titlebar from '../components/Titlebar';
-import Footer from '../components/Footer';
 import Card from '../components/Card';
 import Cardduo from '../components/Cardduo';
 import Cardduonobutton from '../components/Cardduonobutton';
@@ -11,11 +10,6 @@ import Cardduonobutton from '../components/Cardduonobutton';
 function Notfound() {
     return (
         <div>
-            <section className='block'>
-                <div className='banner' align='center'>
-                    By continuing to use our website, you are accepting to our website policy.
-                </div>
-            </section>
             <section className='block'>
                 <div className='container' align='center' style={{ paddingTop: '30px', paddingBottom: '30px' }}>
                     <div className='row board'>
@@ -39,7 +33,6 @@ function Notfound() {
                     </div>
                 </div>
             </section>
-            <Footer />
         </div>
     )
 }
