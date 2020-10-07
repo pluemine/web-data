@@ -11,11 +11,6 @@ function Development() {
     return (
         <div>
             <section className='block'>
-                <div className='banner' align='center'>
-                    By continuing to use our website, you are accepting to our website policy.
-                </div>
-            </section>
-            <section className='block'>
                 <div className='container' align='center' style={{ paddingTop: '30px', paddingBottom: '30px' }}>
                     <div className='row board'>
                         <div className='col-md-12'>
@@ -27,10 +22,11 @@ function Development() {
                             <Titlebar title='Development' />
                             <div style={{ padding: '40px', paddingTop: '30px', paddingBottom: '20px' }}>
                                 <Card subtopic='MEET THE DEVELOPER'
-                                    topic='How we design? Learn more here'
+                                    topic='How we design? Learn more now'
                                     detail=''
                                     source='cover-design.png'
                                     id='cover-design'
+                                    type=''
                                     link='/'
                                     button='Return to Home' />
                             </div>

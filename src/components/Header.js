@@ -6,7 +6,7 @@ function Header() {
         <div>
             <section className='block'>
                 <div className='banner' align='center'>
-                    By continuing to use our website, you are accepting to our website policy.
+                    By continuing to use my website, you are accepting to my website policy.
                 </div>
             </section>
         </div>

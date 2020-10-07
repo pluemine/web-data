@@ -67,6 +67,28 @@ function setlight() {
 }
 
 window.onload = function () {
+
+    if (!localStorage.getItem('wallpaper')) {
+        document.documentElement.setAttribute('data-wallpaper', 'wallpaper1');
+        localStorage.setItem('wallpaper', 'wallpaper1');
+        localStorage.setItem('wallpaper-mode', 'wallpaper1');
+        document.getElementById("setwallpaper1btn").disabled = true;
+    }
+    else {
+        if (localStorage.getItem('wallpaper-mode') == "wallpaper1") {
+            document.getElementById("setwallpaper1btn").disabled = true;
+        }
+        else if (localStorage.getItem('wallpaper-mode') == "wallpaper2") {
+            document.getElementById("setwallpaper2btn").disabled = true;
+        }
+        else if (localStorage.getItem('wallpaper-mode') == "wallpaper3") {
+            document.getElementById("setwallpaper3btn").disabled = true;
+        }
+        else if (localStorage.getItem('wallpaper-mode') == "wallpaper4") {
+            document.getElementById("setwallpaper4btn").disabled = true;
+        }
+    }
+
     if (!localStorage.getItem('theme')) {
         if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
             document.documentElement.setAttribute('data-theme', 'dark');
@@ -109,11 +131,13 @@ if (localStorage.getItem('theme-mode') == "default") {
 
 function Navbar() {
     return (
-        <nav className='container mynav' style={{ }}>
-            <div className='row nav-block' style={{ width: '195px' }}>
-                <button className='switch' style={{margin: 'auto' }} id='setlightbtn' onClick={setlight}>Light</button>
-                <button className='switch' style={{margin: 'auto' }} id='setdarkbtn' onClick={setdark}>Dark</button>
-                <button className='switch' style={{margin: 'auto' }} id='setdefaultbtn' onClick={setdefault}>Auto</button>
+        <nav className='container' style={{ paddingTop: '30px' }}>
+            <div className='row mynav' style={{}}>
+                <div className='nav-block' style={{ width: '180px' }}>
+                    <button className='switch' id='setlightbtn' onClick={setlight}>Light</button>
+                    <button className='switch' id='setdarkbtn' onClick={setdark}>Dark</button>
+                    <button className='switch' id='setdefaultbtn' onClick={setdefault}>Auto</button>
+                </div>
             </div>
         </nav >
     )

@@ -26,6 +26,7 @@ function Notfound() {
                                     detail=''
                                     source='cover-404.png'
                                     id='cover-404'
+                                    type=''
                                     link='/'
                                     button='Return to Home' />
                             </div>

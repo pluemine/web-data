@@ -39,6 +39,26 @@
   }
 }
 
+:root {
+  --wallpaper-color: #FF3CAC;
+  --wallpaper-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+}
+
+[data-wallpaper="wallpaper2"] {
+  --wallpaper-color: #4158D0;
+  --wallpaper-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+
+[data-wallpaper="wallpaper3"] {
+  --wallpaper-color: #F4D03F;
+  --wallpaper-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
+}
+
+[data-wallpaper="wallpaper4"] {
+  --wallpaper-color:  #FAD961;
+  --wallpaper-image: linear-gradient(90deg, #FAD961 0%, #F76B1C 100%);
+}
+
 body {
   margin: 0;
   width: 100vw;
@@ -51,12 +71,16 @@ body {
   right: 0;
   top: 0;
   bottom: 0;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-  animation: gradient 60s ease infinite;
+
+  background-color: var(--wallpaper-color);
+  background-image: var(--wallpaper-image);
+
+  /*background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);*/
+	/*background-size: 400% 400%;*/
+  /*animation: gradient 60s ease infinite;*/
 }
 
-@keyframes gradient {
+/*@keyframes gradient {
 	0% {
 		background-position: 0% 50%;
 	}
@@ -66,4 +90,4 @@ body {
 	100% {
 		background-position: 0% 50%;
 	}
-}
+}*/

@@ -1,6 +1,7 @@
 import React from 'react'
 import './Public.css';
 import { Link } from 'react-router-dom';
+
 function Sidebar() {
     return (
         <div>
@@ -62,7 +63,7 @@ function Sidebar() {
             <div className='row item' style={{ width: '100%' }}>
                 <div className='non-links'>
                     <div className='row'>
-                        <div className='item-text'>Phone Number</div>
+                        <div className='item-text'>Contact</div>
                     </div>
                     <div className='row'>
                         <div className='item-sub-text'>092-256-8868</div>
@@ -95,7 +96,7 @@ function Sidebar() {
                         <div className='item-text'>Latest Update</div>
                     </div>
                     <div className='row'>
-                        <div className='item-sub-text'>06 Oct 2020</div>
+                        <div className='item-sub-text'>07 Oct 2020</div>
                     </div>
                 </div>
             </div>
