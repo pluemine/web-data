@@ -55,7 +55,7 @@ function Home() {
                             </div>
                             <div style={{ paddingLeft: '20px', paddingRight: '20px' }}>
                                 <Cardduo subtopic1='EXTERNAL TOPIC'
-                                    topic1='Introducing new Portfolio Template'
+                                    topic1='Introducing the new Portfolio Template'
                                     detail1=''
                                     source1='icon-template1.png'
                                     id1='template1'
