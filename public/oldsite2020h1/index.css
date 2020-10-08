@@ -2,9 +2,7 @@
   --black-color: #2A2D33;
   --white-color: #FEFEFE;
   --cardwhite-shadow-color: 9px 9px 16px rgba(163,177,198,0.6), -9px -9px 16px rgba(163,177,198,0.2);
-  --cardwhite-shadow-hover-color: inset 9px 9px 16px rgb(163,177,198,0.2), inset -9px -9px 16px rgba(163,177,198,0.1);
   --cardblack-shadow-color: 9px 9px 16px rgba(10,10,10,0.5), -9px -9px 16px rgba(10,10,10,0.5);
-  --cardblack-shadow-hover-color: inset 9px 9px 16px rgba(10,10,10,0.4), inset -9px -9px 16px rgba(10,10,10,0.4);
   --navbarwhite-shadow-color: 0px 1px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -12,9 +10,7 @@
   --black-color: #FEFEFE;
   --white-color: #2A2D33;
   --cardwhite-shadow-color: 9px 9px 16px rgba(10,10,10,0.5), -9px -9px 16px rgba(10,10,10,0.5);
-  --cardwhite-shadow-hover-color: inset 9px 9px 16px rgba(10,10,10,0.4), inset -9px -9px 16px rgba(10,10,10,0.4);
   --cardblack-shadow-color: 9px 9px 16px rgba(163,177,198,0.6), -9px -9px 16px rgba(163,177,198,0.2);
-  --cardblack-shadow-hover-color: inset 9px 9px 16px rgba(10,10,10,0.4), inset -9px -9px 16px rgba(10,10,10,0.4);
   --navbarwhite-shadow-color: 0px 1px 5px rgba(255, 255, 255, 0.1);
 }
 
@@ -121,10 +117,6 @@
     border-radius: 10px;
   }
 
-  .card:hover {
-    box-shadow: var(--cardwhite-shadow-hover-color);
-  }
-
   .card-black {
     transition: all 1s ease;
     width: fit-content;
@@ -133,10 +125,6 @@
     background: #2A2D33;
     box-shadow: var(--cardwhite-shadow-color);
     border-radius: 10px;
-  }
-
-  .card-black:hover {
-    box-shadow: var(--cardblack-shadow-hover-color);
   }
 
   .board {

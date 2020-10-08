@@ -24,8 +24,8 @@ function Portfolio() {
                                 <Card subtopic='FEATURED TOPIC'
                                     topic='Meet my Extraordinary Portfolio'
                                     detail=''
-                                    source='card-allport.png'
-                                    id='cover-allport'
+                                    source='cover-allport.png'
+                                    id='cover-allport-port'
                                     type=''
                                     link='/'
                                     button='Return to Home' />

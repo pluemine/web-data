@@ -2,19 +2,9 @@ import React from 'react'
 import './Public.css';
 
 function calldark() {
-    if (window.location.pathname === "/") {
-        document.getElementById('icon-aboutme').src = 'icon-aboutme-dark.png'
-        document.getElementById('icon-switch').src = 'icon-switch-dark.png'
-        document.getElementById('icon-creation').src = 'icon-creation.png'
-    }
 }
 
 function calllight() {
-    if (window.location.pathname === "/") {
-        document.getElementById('icon-aboutme').src = 'icon-aboutme.png'
-        document.getElementById('icon-switch').src = 'icon-switch.png'
-        document.getElementById('icon-creation').src = 'icon-creation.png'
-    }
 }
 
 var e = window.matchMedia("(prefers-color-scheme: dark)");

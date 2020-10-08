@@ -47,7 +47,7 @@ function Aboutme() {
                                     id2='aboutme-education' />
                             </div>
                             <div style={{ paddingLeft: '20px', paddingRight: '20px', paddingTop: '20px' }}>
-                                <Cardduonobutton subtopic1='WORK WITH US'
+                                <Cardduonobutton subtopic1='WORK WITH ME'
                                     topic1='I am interesting in'
                                     detail1='UI/UX design, Front-End developement, RPA development.'
                                     source1='aboutme-skill.png'
