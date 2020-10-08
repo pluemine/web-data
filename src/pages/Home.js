@@ -45,7 +45,7 @@ function Home() {
                                     link1='/Aboutme'
                                     button1='About me'
                                     subtopic2='MEET THE DEVELOPER'
-                                    topic2='How we design? Learn more now'
+                                    topic2='How I design? Learn more now'
                                     detail2=''
                                     source2='icon-switch.png'
                                     id2='icon-switch'
