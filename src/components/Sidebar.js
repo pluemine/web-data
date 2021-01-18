@@ -76,7 +76,7 @@ function Sidebar() {
                         <div className='item-text'>Email Address</div>
                     </div>
                     <div className='row'>
-                        <div className='item-sub-text'>pluem_ultimate@hotmail.com</div>
+                        <div className='item-sub-text'>suchut@outlook.com</div>
                     </div>
                 </div>
             </div>
@@ -96,7 +96,7 @@ function Sidebar() {
                         <div className='item-text'>Latest Update</div>
                     </div>
                     <div className='row'>
-                        <div className='item-sub-text'>07 Oct 2020</div>
+                        <div className='item-sub-text'>18 Jan 2021</div>
                     </div>
                 </div>
             </div>
