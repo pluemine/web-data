@@ -197,8 +197,6 @@
     font-size: 20px !important;
     font-weight: bold !important;
     text-align: left;
-    padding-left: 30px;
-    padding-right: 30px;
     transition: all 0.5s ease;
 }
 
@@ -207,8 +205,6 @@
     font-size: 12px !important;
     font-weight: bold !important;
     text-align: left;
-    padding-left: 30px;
-    padding-right: 30px;
     padding-top: 10px;
     transition: all 0.5s ease;
 }
@@ -216,17 +212,16 @@
 .card-detail {
     color: var(--text-secondary-color);
     font-size: 12px !important;
-    font-weight: bold !important;
+    font-weight: 600 !important;
     text-align: left;
-    padding-left: 30px;
-    padding-right: 30px;
     padding-top: 5px;
     transition: all 0.5s ease;
 }
 
 .button {
     width: 100%;
-    margin: 10px;
+    /*margin: 10px;*/
+    margin: 10px 0px;
     padding: 5px;
     background: var(--button-bg-color);
     color: var(--button-text-color);

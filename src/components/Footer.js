@@ -6,7 +6,7 @@ function Footer() {
         <div>
             <section className='block'>
                 <div className='banner' align='center'>
-                    © 2020 SCH DESIGNED
+                    © 2021 SCH DESIGNED
                 </div>
             </section>
         </div>
