@@ -50,12 +50,12 @@ function Aboutme() {
                   <Cardduonobutton
                     subtopic1="FIRST MEET"
                     topic1="Suchut Sapsathien"
-                    detail1='My nickname is "Pluem" or you can call me "Pluemine" as the website name. Nothing to say but .. Thank you.'
+                    detail1='My nickname is "Pluem" or you can call me "Pluemine" as the website name. Nice to meet you :)'
                     source1="aboutme-profile.png"
                     id1="aboutme-profile"
                     subtopic2="KNOWLEDGE"
                     topic2="About my Education"
-                    detail2="Computer Engineering student at Chulalongkorn University, Science-Math student at Saint Gabriel's College."
+                    detail2="Computer-Eng student at Chulalongkorn University, Science-Math student at Saint Gabriel's College."
                     source2="aboutme-education.png"
                     id2="aboutme-education"
                   />
@@ -63,7 +63,7 @@ function Aboutme() {
               </div>
               <div className="row" style={{ width: "100%" }}>
                 <div className="col-md-12" style={{ paddingBottom: "10px" }}>
-                  <Cardduonobutton
+                  {/*<Cardduonobutton
                     subtopic1="WORK WITH ME"
                     topic1="I am interesting in"
                     detail1="UI/UX design, Front-End developement, RPA development."
@@ -74,6 +74,24 @@ function Aboutme() {
                     detail2="It come from my name .. I think you already know!"
                     source2="aboutme-sch.png"
                     id2="aboutme-sch"
+                  />*/}
+                  <Cardduo
+                    subtopic1="WORK WITH ME"
+                    topic1="I am interesting in"
+                    detail1='UI/UX design, Front-End developement, RPA development.'
+                    source1="aboutme-skill.png"
+                    id1="aboutme-skill"
+                    type1="ext"
+                    link1="profile/Resume.pdf"
+                    button1="View Resume"
+                    subtopic2="PORTFOLIO"
+                    topic2="Rule your world"
+                    detail2='Portfolio contains a lot of projects. You can view them here.'
+                    source2="aboutme-port.png"
+                    id2="aboutme-port"
+                    type2="ext"
+                    link2="profile/Portfolio.pdf"
+                    button2="View Portfolio"
                   />
                 </div>
               </div>
